@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+  <link type="text/css" rel="stylesheet" href="css/main.css" />
+  <link type="text/css" rel="stylesheet" href="assets/css/style.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<title>HOTELS</title>
+</head>
+<body>
+	
+        <body id="home" class="scrollspy">
+                <div class="navbar-fixed">
+                  <nav class="teal">
+                    <div class="container">
+                      <div class="nav-wrapper">
+                        <a href="#home" class="brand-logo">MCGen</a>
+                        <a href="#" data-activates="mobile-nav" class="button-collapse">
+                          <i class="material-icons">menu</i>
+                        </a>
+                        <ul class="right hide-on-med-and-down">
+                          <li>
+                            <a href="index.html">Home</a>
+                          </li>
+                          <li>
+                            <a href="about.html">About Us</a>
+                          </li>
+                          <li>
+                            <a href="hotels.html">Hotels</a>
+                          </li>
+                          <li>
+                            <a href="contact.html">Contact Us</a>
+                          </li>
+                          <li>
+                            <a href="#search">Search</a>
+                          </li>
+                          <li>
+                            <a href="#popular">Popular Places</a>
+                          </li>
+                          <li>
+                            <a href="#gallery">Gallery</a>
+                          </li>
+                          <li>
+                            <a href="#contact">Contact Us</a>
+                          </li>
+                          <li>
+                            <a href="#contact">Sign Up</a>
+                          </li>
+                          <li>
+                            <a href="#contact">Login</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>
+                </div>
+                <ul class="side-nav" id="mobile-nav">
+                  <li>
+                    <a href="index.html">Home</a>
+                  </li>
+                  <li>
+                        <a href="about.html">About</a>
+                  </li>
+                  <li>
+                        <a href="hotels.html">Hotels</a>
+                  </li>
+                  <li>
+                        <a href="contact.html">Contact Us</a>
+                  </li>
+                  <li>
+                    <a href="#search">Search</a>
+                  </li>
+                  <li>
+                    <a href="#popular">Popular Places</a>
+                  </li>
+                  <li>
+                    <a href="#gallery">Gallery</a>
+                  </li>
+                  <li>
+                    <a href="#contact">Contact</a>
+                  </li>
+                  <li>
+                    <a href="#contact">Contact</a>
+                  </li>
+                  <li>
+                    <a href="#contact">Contact</a>
+                  </li>
+                </ul>
+      
+
+	<main>
+<div class="container">
+    <!-- Hotels List -->
+    <div class="row">
+        <div class="card-panel blue lighten-1 white-text">
+            <div class="row">
+                <!-- Hotel Image -->
+                <div class="col s12 m3"><img src="" alt="..." id="img1"></div>
+                <div class="col s12 m3">
+                    <!-- Hotel Information -->
+                    <div class="row">
+                        <div>NAME</div>
+                    </div>
+                    <div class="row">
+                        <div>LOCATION</div>
+                    </div>
+                    <div class="row">
+                        <div>RATING</div>
+                    </div>
+                    <div class="row">
+                        <div>FEEDBACK</div>
+                    </div>
+                </div>
+                <!-- Rooms Price -->
+                <div class="col s12 m3">
+                    <div class="row">
+                        <div class="">Deluxe</div>
+                        <div id="hotelPrice1">50,000</div>
+                    </div>
+                    <div class="row">
+                        <div class="">Prime</div>
+                        <div id="hotelPrice2">25,000</div>
+                    </div>
+                    <div class="row">
+                        <div class="">Mega</div>
+                        <div id="hotelPrice3">15,000</div>
+                    </div>
+                </div>
+                <!-- Book Now Column -->
+                <div class="col s12 m3 center">
+                    <div class="row">
+                        <div id="output1" style="font-weight: bold;"></div>
+                    </div>
+                    <div class="row">
+                        <button class="btn blue white-text" id="viewDetails1">VIEW DETAILS</button>
+                    </div>
+                    <div class="row">
+                        <button class="btn blue white-text bookNow">BOOK NOW</button>
+                    </div>
+                </div>		
+            </div>
+        </div>
+        <!-- View Details -->
+        <nav id="moreInfo1">
+            <ul class="left">
+                <li  class="active"><a href="info.html">INFO</a></li>
+                <li><a href="photos.html">PHOTOS</a></li>
+                <li><a href="reviews.html">REVIEWS</a></li>
+            </ul>
+        </nav>
+</div>
+    </main>
+    
+    <!-- Section: Info -->
+    <!-- Section: Contact -->
+  <section id="contact" class="section section-contact center scrollspy">
+        <div id="googlemap"></div>
+        <div class="container">
+          <div class="row">
+            <div class="col s12 m6 offset-m6">
+              <div class="card-panel z-depth-5">
+                <h4>Contact Us</h4>
+                <div class="input-field">
+                  <input type="text" id="name" placeholder="Name">
+                  <label for="name">Name</label>
+                </div>
+                <div class="input-field">
+                  <input type="email" id="email" placeholder="Email">
+                  <label for="email">Email</label>
+                </div>
+                <div class="input-field">
+                  <input type="text" id="phone" placeholder="Phone Number">
+                  <label for="phone">Phone</label>
+                </div>
+                <div class="input-field">
+                  <textarea class="materialize-textarea" id="message" placeholder="Message"></textarea>
+                  <label for="message">Message</label>
+                </div>
+                <input type="submit" value="Submit" class="btn blue-grey">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+        
+
+
+
+
+
+
+
+
+    <!-- Footer -->
+  <footer class="section teal darken-2 white-text center">
+        <p class="flow-text">Travelville &copy; 2018</p>
+      </footer>
+    
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="assets/js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="assets/js/materialize.min.js"></script>
+    <script src="http://maps.googleapis.com/maps/api/js"></script>
+    <!-- Vanilla Js -->
+    <script type="text/javascript" src="assets/js/script.js"></script>
+    <script>
+            $(document).ready(function () {
+              // Init Sidenav
+              $('.button-collapse').sideNav();
+        
+              // Init Scrollspy
+              $('.scrollspy').scrollSpy();
+        
+              // ScrollFire
+              const options = [
+                {
+                  selector: '.main-text', offset: 0, callback: function (el) {
+                    Materialize.fadeInImage($(el));
+                  }
+                },
+                {
+                  selector: '.navbar-fixed', offset: 1500, callback: function () {
+                    $('nav').removeClass('transparent');
+                    $('nav').addClass('blue-grey darken-3');
+                  }
+                }
+              ];
+        
+              Materialize.scrollFire(options);
+        
+              const position = [42.361145, -71.057083];
+              const centerPosition = [42.377815, -70.981133];
+        
+              function showGoogleMaps() {
+                // Map positions
+                const latLng = new google.maps.LatLng(position[0], position[1]);
+                const centerLatLng = new google.maps.LatLng(centerPosition[0], centerPosition[1]);
+        
+                // Map options
+                const mapOptions = {
+                  zoom: 12,
+                  streetViewControl: false,
+                  scaleControl: true,
+                  mapTypeId: google.maps.MapTypeId.ROADMAP,
+                  center: centerLatLng
+                }
+        
+                // Create map
+                map = new google.maps.Map(document.getElementById('googlemap'), mapOptions);
+        
+                // Show Marker
+                marker = new google.maps.Marker({
+                  position: latLng,
+                  map: map,
+                  draggable: false,
+                  animation: google.maps.Animation.DROP
+                });
+              }
+        
+              // Maps event
+              google.maps.event.addDomListener(window, 'load', showGoogleMaps);
+        
+            });
+          </script>
+</body>
+</html>
